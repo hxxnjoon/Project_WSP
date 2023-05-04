@@ -1,0 +1,35 @@
+* {
+    margin: 0; padding: 10px;
+    text-align: center;
+}
+
+#img {
+    width: 1000px;
+    margin: 0px auto;
+    overflow: hidden;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+div > article {
+    float: left;
+    width: 300px;
+    height: 700px;
+    padding-right: 10px;
+    margin-bottom: 10px;
+    border: 1px solid navy;
+
+    
+}
+
+
+img {
+    display: block;
+    margin: -10px;
+
+}
+
+ul.name {
+    list-style-image: url("전화.png");
+    font-size: 38px;
+  }
