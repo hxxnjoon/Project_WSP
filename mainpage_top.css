@@ -1,0 +1,128 @@
+body {
+    margin: 0px;
+}
+
+.background-image {
+    width: 100%;
+    height: 500px;
+    background-image: url("img_main.jpg");
+}
+
+.search {
+    position: absolute;
+    width: 800px;
+    top: 350px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+input[type="text"]{
+    width: 100%;
+    border: 2px solid navy;
+    border-radius: 30px;
+    padding: 13px;
+    font-size: 20px;
+    font-weight: bold;
+}
+input[type="text"]:focus {
+    outline: 1px solid navy;
+}
+
+img {
+    position: absolute;
+    width: 35px;
+    top: 8px;
+    right: 0px;
+    margin: 0px;
+}
+img:hover {
+    cursor: pointer;
+}
+
+h1 {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    top: 200px;
+    color: white;
+    font-family: fantasy, serif;
+    font-weight: bold;
+    white-space: nowrap;
+}
+
+a {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-family: fantasy, serif;
+    font-weight: bold;
+    color:white;
+    text-decoration: none;
+}
+
+#category {
+    text-align: center;
+    list-style-type:none;
+    position: absolute;
+    width: 1000px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    top: 450px;
+}
+
+#category li {
+    display: inline-block;
+    padding: 15px 50px;
+    margin: -4px;
+    color: navy;
+    font-weight: bold;
+    background-color: white;
+    border-top: 1px solid gray;
+    border-bottom: 1px solid gray;
+}
+#category li:first-child {
+    border-left: 1px solid gray;
+    border-top-left-radius: 100px;
+    border-bottom-left-radius: 100px;
+}
+#category li:last-child {
+    border-right: 1px solid gray;
+    border-top-right-radius: 100px;
+    border-bottom-right-radius: 100px;
+}
+#category li:hover {
+    color:white;
+    background-color: navy;
+    cursor: pointer;
+}
+
+.menu {
+    position: absolute;
+    display: inline-block;
+    left: 51.3%;
+    transform: translate(-50%, -50%);
+    top: 595px;
+    width: 780px;
+    height: 200px;
+    border: 1px solid gray;
+    background-color: white;
+    border-radius: 20px;
+}
+.menu ul {
+    list-style-type: none;
+    display: inline-block;
+}
+
+input[type="radio"]{
+    margin-top: 25px;
+    margin-left: 15px;
+}
+#nth-radio{
+    margin-left: 30px;
+}
+input[type="radio"],label:hover{
+    cursor: pointer;
+}
+input[type="radio"]:checked{
+    background-color: navy;
+}
