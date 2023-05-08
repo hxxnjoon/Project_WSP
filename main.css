@@ -2,6 +2,7 @@
     margin : 0px; padding : 0px;
     color : #3f3d42;    
     font-size: 18px;
+    border: 1px solid red;
 }
 
 .box {
@@ -117,7 +118,9 @@ table {
     border-radius: 15px;
     border: 3px solid #1d2475;
     background-color: white;
+    width: 1400px;
     height: 1000px;
+    margin-left: 100px;
 
 
 }
