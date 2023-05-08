@@ -1,13 +1,11 @@
 * {
     margin : 0px; padding : 0px;
-    color : #3f3d42;
-    border : 1px solid red;
-    
+    color : #3f3d42;    
 }
 
 .box {
     background-color : #1d2475;
-    width : 300px;
+    width : 400px;
     height : 600px;
     float : left;
     margin : 0 50px;
@@ -15,7 +13,7 @@
 }
 
 .box-wrapper {
-    width : 1200px;
+    width : 1400px;
 }
 
 article {
@@ -28,13 +26,21 @@ article {
 h1 {
     margin-left : 50px;
     margin-bottom : 25px;
+    margin-top: 25px;
     font-size : 50px;
 }
 
-h2, p, hr {
+#title {
+    font-size : 30px;
+    font-weight : bolder;
+    margin-bottom: 20px;
+}
+
+#title, p, hr {
     text-align: left;
     color: white;
     margin-left : 25px;
+    margin-right: 25px;
     margin-top : 8px;
 }
 
@@ -50,4 +56,70 @@ h2, p, hr {
 
 hr {
     width : "250px";
+    margin-bottom: 10px;
+
 }
+
+#des {
+    font-size : 20px;
+}
+
+#tag {
+    font-size : 20px;
+}
+
+#d1 {
+    float: left;
+    margin-left: 25px;
+}
+
+
+#d2 {
+    color: white;
+    float: left;
+    margin-left: 10px;
+    letter-spacing: 4px;
+}
+
+#d3 {
+    width: 200px;
+    text-align: justify;
+    float: right;
+    color: white;
+    margin-left: 10px;
+    margin-right: 25px;
+    letter-spacing: 4px;
+}
+
+table {
+    table-layout: fixed;
+    border-spacing: 40px;
+}
+
+.button {
+    width: 150px;
+    margin-left: 225px;
+    margin-right: 20px;
+    margin-top: 25px;
+    background-color: #1d2475;
+    color: white;
+    font-size: 20px;
+    font-weight : bolder;
+    border: 2px solid white;
+    border-radius: 15px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+    text-decoration: none;
+    transition: 0.25s;
+    padding: 5px;
+}
+
+.button:hover {
+    background-color: white;
+    color: #1d2475;
+    letter-spacing: 3px;
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+
+
