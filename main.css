@@ -1,35 +1,53 @@
 * {
-    margin: 0; padding: 10px;
-    text-align: center;
-}
-
-#img {
-    width: 1000px;
-    margin: 0px auto;
-    overflow: hidden;
-    padding-top: 10px;
-    padding-left: 10px;
-    padding-right: 10px;
-}
-div > article {
-    float: left;
-    width: 300px;
-    height: 700px;
-    padding-right: 10px;
-    margin-bottom: 10px;
-    border: 1px solid navy;
-
+    margin : 0px; padding : 0px;
+    color : #3f3d42;
+    border : 1px solid red;
     
 }
 
-
-img {
-    display: block;
-    margin: -10px;
+.box {
+    background-color : #1d2475;
+    width : 300px;
+    height : 600px;
+    float : left;
+    margin : 0 50px;
 
 }
 
-ul.name {
-    list-style-image: url("전화.png");
-    font-size: 38px;
-  }
+.box-wrapper {
+    width : 1200px;
+}
+
+article {
+    display : block;
+    margin : auto;
+    text-align : center;
+    margin-top : 25px;
+}
+
+h1 {
+    margin-left : 50px;
+    margin-bottom : 25px;
+    font-size : 50px;
+}
+
+h2, p, hr {
+    text-align: left;
+    color: white;
+    margin-left : 25px;
+    margin-top : 8px;
+}
+
+#tel {
+    list-style-image : url("전화.png");
+    height: 50px;
+}
+
+#add {
+    list-style-image : url("주소.png");
+    height: 50px;
+}
+
+hr {
+    width : "250px";
+}
