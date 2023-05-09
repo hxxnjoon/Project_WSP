@@ -1,0 +1,46 @@
+header{
+    float: left;
+}
+
+button.close {
+    margin: 10px;
+    float: right;
+    color: #1d2475;
+    font-weight: bold;
+}
+
+#tag{
+    margin: 30px;
+    letter-spacing: 1px;
+    font-size: 15px;
+}
+#title{
+    color: #1d2475;
+    font-size: 40px;
+    font-weight: bold;
+    margin: 30px;
+}
+
+#d1 {
+    margin-left: 25px;
+}
+
+#d2 {
+    color: #1d2475;
+    margin-left: 10px;
+    letter-spacing: 4px;
+    font-weight: bold;
+}
+
+#d3 {
+    width: 200px;
+    text-align: justify;
+    margin-left: 10px;
+    margin-right: 25px;
+    letter-spacing: 4px;
+}
+
+button.mn {
+    color: #1d2475;
+    font-weight: bold;
+}
