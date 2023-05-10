@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>main_search</title>
+    <link rel="stylesheet" href="mainpage_top.css">
+</head>
+<body>
+    <h1 id="header">WEB SYSTEM PROGRAMMING</h1>
+    <a href = "mainpage_top.html">W&nbspE&nbspB<br>S&nbspY&nbspS&nbspT&nbspE&nbspM<br>P&nbspR&nbspO&nbspG&nbspR&nbspA&nbspM&nbspM&nbspI&nbspN&nbspG</a>
+    <div class="search">
+        <input type="text" placeholder="상호명 입력">
+        <img id ="src" src="img_src.png">
+    </div>
+    <div class="background-image">
+    </div>
+    <div class="nav">
+        <ul id="category">
+            <li>인원&nbsp수</li>
+            <li>분위기</li>
+            <li>가격대</li>
+            <li>음식&nbsp종류</li>
+            <li>N차</li>
+        </ul>
+    </div>
+    <div class="menu">
+        <ul id="person-radio">
+            <li>
+                <input type="radio" id="1person" name="person" value="1">
+                <label for="1person">1인</label>
+            </li>
+            <li>
+                <input type="radio" id="2persons" name="person" value="2">
+                <label for="2persons">2인</label>
+            </li>
+            <li>
+                <input type="radio" id="4persons" name="person" value="4">
+                <label for="4persons">4~6인</label>
+            </li>
+            <li>
+                <input type="radio" id="group" name="person" value="group">
+                <label for="group">7인 이상</label>
+            </li>
+        </ul>
+        <ul id="mood-radio">
+            <li>
+                <input type="radio" id="loudness" name="mood" value="loudness">
+                <label for="loudness">시끄러움</label>
+            </li>
+            <li>
+                <input type="radio" id="quiet" name="mood" value="quiet">
+                <label for="quiet">조용함</label>
+            </li>
+        </ul>
+        <ul id="price-radio">
+            <li>
+                <input type="radio" id="10000" name="price" value="10000">
+                <label for="10000">1만원대</label>
+            </li>
+            <li>
+                <input type="radio" id="20000" name="price" value="20000">
+                <label for="20000">2만원대</label>
+            </li>
+            <li>
+                <input type="radio" id="30000" name="price" value="30000">
+                <label for="30000">3만원대</label>
+            </li>
+            <li>
+                <input type="radio" id="over" name="price" value="over">
+                <label for="over">3만원대 이상</label>
+            </li>
+        </ul>
+        <ul id="food-radio">
+            <li>
+                <input type="radio" id="korea" name="food" value="korea">
+                <label for="korea">한식</label>
+            </li>
+            <li>
+                <input type="radio" id="japan" name="food" value="japan">
+                <label for="japan">일식</label>
+            </li>
+            <li>
+                <input type="radio" id="china" name="food" value="china">
+                <label for="china">중식</label>
+            </li>
+            <li>
+                <input type="radio" id="etc" name="food" value="etc">
+                <label for="etc">기타</label>
+            </li>
+        </ul>
+        <ul id="nth-radio">
+            <li>
+                <input type="radio" id="first" name="nth" value="first">
+                <label for="first">1차</label>
+            </li>
+            <li>
+                <input type="radio" id="second" name="nth" value="second">
+                <label for="second">2차</label>
+            </li>
+        </ul>
+    </div>
+
+    
+
+<!--여기부터 지수가 만든 거-->
+
+    <section>
+    
+        <h1>HOT/NEW 술집</h1>
+    
+        <table>
+            <tr>
+            <td>
+            <div class="box">
+                <article>
+                    <img id="img" src="용용선생.jpeg" width="350px" height="280px">
+                    <p id="tag">#화산마라전골 #유린기 #홍콩 주점</p>
+                    <p id="title">"용용선생"</p>
+                    <hr>
+        
+                    <div id="des">
+                        <img id="d1" src="전화.jpg" width="20px" height="20px">
+                        <span id="d2">전화</span>
+                        <span id="d3">0507-1311-5269</span>
+                        <br>
+                    </div>
+                    
+                    <br>
+        
+                    <div id="des">
+                        <img id="d1" src="주소.jpg" width="20px" height="20px">
+                        <span id="d2">주소</span>
+                        <span id="d3">서울 성동구 마조로<br>3가길 15</span>
+                        <br>
+                    </div>
+    
+                    <br>
+
+                    <!--버튼마다 상세페이지 링크 수정 예정-->
+                    <button type="button" class="button" onclick="location.href='detailed_page.html'">자세히 보기 !</button>
+    
+                </article>
+            </div>
+        
+            <div class="box">
+                <article>
+                    <img id="img" src="육회.jpeg" width="350px" height="280px">
+                    <p id="tag">#육회 #분위기 있는 #데이트</p>
+                    <p id="title">"육회공작소"</p>
+                    <hr>
+        
+                    <div id="des">
+                        <img id="d1" src="전화.jpg" width="20px" height="20px">
+                        <span id="d2">전화</span>
+                        <span id="d3">02-2281-6023</span>
+                        <br>
+                    </div>
+                    
+                    <br>
+        
+                    <div id="des">
+                        <img id="d1" src="주소.jpg" width="20px" height="20px">
+                        <span id="d2">주소</span>
+                        <span id="d3">서울 성동구 마조로<br>7길 5 한양고시원</span>
+                    </div>
+    
+                    <button type="button" class="button" onclick="location.href='detailed_page.html'">자세히 보기 !</button>
+                </article>
+            </div>
+            
+            <div class="box">
+                <article>
+                    <img id="img" src="제일곱창.jpeg" width="350px" height="280px">
+                    <p id="tag">#서울 1티어 소곱창 맛집 #웨이팅 필수</p>
+                    <p id="title">"제일곱창"</p>
+                    <hr>
+        
+                    <div id="des">
+                        <img id="d1" src="전화.jpg" width="20px" height="20px">
+                        <span id="d2">전화</span>
+                        <span id="d3">010-8690-9792</span>
+                        <br>
+                    </div>
+                    
+                    <br>
+        
+                    <div id="des">
+                        <img id="d1" src="주소.jpg" width="20px" height="20px">
+                        <span id="d2">주소</span>
+                        <span id="d3">서울 성동구 고산자로 281 1층</span>
+                    </div>
+    
+                    <button type="button" class="button" onclick="location.href='detailed_page.html'">자세히 보기 !</button>
+                </article>
+            </div>
+            </td>
+            </tr>
+    
+            <tr id="tr">
+            </tr>
+    
+            <tr>
+                <td>
+                <div class="box">
+                    <article>
+                        <img id="img" src="땅코참숯.jpg" width="350px" height="280px">
+                        <p id="tag">#서울 3대 목살 맛집 #육즙 #숯향</p>
+                        <p id="title">"땅코참숯구이"</p>
+                        <hr>
+            
+                        <div id="des">
+                            <img id="d1" src="전화.jpg" width="20px" height="20px">
+                            <span id="d2">전화</span>
+                            <span id="d3">0507-1311-6908</span>
+                            <br>
+                        </div>
+                        
+                        <br>
+            
+                        <div id="des">
+                            <img id="d1" src="주소.jpg" width="20px" height="20px">
+                            <span id="d2">주소</span>
+                            <span id="d3">서울 성동구 행당로<br>17길 26 1층</span>
+                        </div>
+    
+                        <button type="button" class="button" onclick="location.href='detailed_page.html'">자세히 보기 !</button>
+                    </article>
+                </div>
+            
+                <div class="box">
+                    <article>
+                        <img id="img" src="장모족발.jpeg" width="350px" height="280px">
+                        <p id="tag">#왕십리 족발 맛집 #콩나물국 #단체모임</p>
+                        <p id="title">"장모족발"</p>
+                        <hr>
+            
+                        <div id="des">
+                            <img id="d1" src="전화.jpg" width="20px" height="20px">
+                            <span id="d2">전화</span>
+                            <span id="d3">02-2294-0327</span>
+                            <br>
+                        </div>
+                        
+                        <br>
+            
+                        <div id="des">
+                            <img id="d1" src="주소.jpg" width="20px" height="20px">
+                            <span id="d2">주소</span>
+                            <span id="d3">서울 성동구 마조로<br>15-10</span>
+                        </div>
+    
+                        <button type="button" class="button" onclick="location.href='detailed_page.html'">자세히 보기 !</button>
+                    </article>
+                </div>
+                
+                <div class="box">
+                    <article>
+                        <img id="img" src="와시리(횟집).png" width="350px" height="280px">
+                        <p id="tag">#사시미 #토마토 스튜 #이자카야</p>
+                        <p id="title">"와시리"</p>
+                        <hr>
+            
+                        <div id="des">
+                            <img id="d1" src="전화.jpg" width="20px" height="20px">
+                            <span id="d2">전화</span>
+                            <span id="d3">02-2282-0512</span>
+                            <br>
+                        </div>
+                        
+                        <br>
+            
+                        <div id="des">
+                            <img id="d1" src="주소.jpg" width="20px" height="20px">
+                            <span id="d2">주소</span>
+                            <span id="d3">서울 성동구 무학봉<br>28길 9</span>
+                        </div>
+                        <button type="button" class="button" onclick="location.href='detailed_page.html'">자세히 보기 !</button>
+                    </article>
+                </div>
+                </td>
+            </tr>
+            </table>
+    
+            <tr id="tr">
+            </tr>
+    
+    
+            <hr>
+    
+        </section>
+</body>
+</html>
