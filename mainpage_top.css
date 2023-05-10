@@ -3,7 +3,7 @@ body {
 }
 
 .background-image {
-    width: 100%;
+    width: 1650px;
     height: 500px;
     background-image: url("img_main.jpg");
 }
@@ -39,7 +39,7 @@ input[type="text"]:focus {
     cursor: pointer;
 }
 
-#header {
+#sitemain {
     position: absolute;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -48,9 +48,10 @@ input[type="text"]:focus {
     font-family: fantasy, serif;
     font-weight: bold;
     white-space: nowrap;
+    font-size: 50px;
 }
 
-a {
+#mainlogo {
     position: absolute;
     top: 20px;
     left: 20px;
@@ -99,9 +100,9 @@ a {
 .menu {
     position: absolute;
     display: inline-block;
-    left: 51.3%;
+    left: 50%;
     transform: translate(-50%, -50%);
-    top: 595px;
+    top: 580px;
     width: 780px;
     height: 200px;
     border: 1px solid gray;
@@ -115,10 +116,10 @@ a {
 
 input[type="radio"]{
     margin-top: 25px;
-    margin-left: 15px;
+    margin-left: 50px;
 }
 #nth-radio{
-    margin-left: 30px;
+    margin-left: 40px;
 }
 input[type="radio"],label:hover{
     cursor: pointer;
@@ -155,7 +156,7 @@ article {
     margin-top : 25px;
 }
 
-h1 {
+#header {
     margin-left : 90px;
     margin-bottom : 25px;
     margin-top: 30px;
