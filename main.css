@@ -112,3 +112,7 @@ table {
     transform: scale(1.1);
     cursor: pointer;
 }
+
+section {
+    width: 1600px;
+}

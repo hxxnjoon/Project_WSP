@@ -44,3 +44,11 @@ button.mn {
     color: #1d2475;
     font-weight: bold;
 }
+
+div {
+    width: 1600px;
+}
+
+#text {
+    clear:left;
+}
