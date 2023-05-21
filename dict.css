@@ -68,6 +68,15 @@ article {
     margin-bottom: 25px;
 }
 
+.diccontent {
+    display: block; /* 초기에 숨김 */
+}
+
+.dictitle.active .diccontent {
+    display: none; /* 활성화된 항목은 보여줌 */
+}
+
+
 #dic1, #dic2, dl {
     text-align: left;
     font-size: 25px;
