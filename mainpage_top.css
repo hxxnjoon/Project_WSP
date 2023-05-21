@@ -9,7 +9,7 @@ body {
 }
 
 .search {
-    position: absolute;
+    position: relative;
     width: 800px;
     top: 350px;
     left: 50%;
@@ -65,7 +65,7 @@ input[type="text"]:focus {
     text-align: center;
     list-style-type:none;
     position: absolute;
-    width: 1000px;
+    width: 800px;
     left: 50%;
     transform: translate(-50%, -50%);
     top: 450px;
@@ -103,7 +103,7 @@ input[type="text"]:focus {
     left: 50%;
     transform: translate(-50%, -50%);
     top: 580px;
-    width: 780px;
+    width: 650px;
     height: 200px;
     border: 1px solid gray;
     background-color: white;
@@ -114,17 +114,17 @@ input[type="text"]:focus {
     display: inline-block;
 }
 
-input[type="radio"]{
+input[type="checkbox"]{
     margin-top: 25px;
     margin-left: 50px;
+    opacity: 0;
+    width: 0;
 }
-#nth-radio{
-    margin-left: 40px;
-}
-input[type="radio"],label:hover{
+
+input[type="checkbox"],label:hover{
     cursor: pointer;
 }
-input[type="radio"]:checked{
+input[type="checkbox"]:checked{
     background-color: navy;
 }
 
