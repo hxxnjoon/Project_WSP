@@ -11,7 +11,7 @@
     width : 400px;
     height : 600px;
     float : left;
-    margin : 0 50px;
+    margin : 20px 50px;
     /*display: none;*/
 
 }
@@ -90,4 +90,28 @@ hr {
 table {
     table-layout: fixed;
     border-spacing: 40px;
+}
+
+.button {
+    width: 150px;
+    margin-left: 225px;
+    margin-right: 20px;
+    margin-top: 25px;
+    background-color: #1d2475;
+    color: white;
+    font-weight : bolder;
+    border: 2px solid white;
+    border-radius: 15px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+    text-decoration: none;
+    transition: 0.25s;
+    padding: 5px;
+}
+
+.button:hover {
+    background-color: white;
+    color: #1d2475;
+    letter-spacing: 2px;
+    transform: scale(1.1);
+    cursor: pointer;
 }
