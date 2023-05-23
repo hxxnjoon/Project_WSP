@@ -1,54 +1,60 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html lang="en">
 <head>
     <title>상세페이지</title>
     <link type="text/css" rel="stylesheet" href="detailed_page.css">
 </head>
 <body>
-    <div>
-    <header>
-        <button type = "button" class = "close" >X</button>
-        <img id = "img0" src = "와시리(횟집).png" width= "350px" height = "350px">
-        <img id = "img1" src = "와시리1.jpeg" width = "350px" height = "350px">
-        <img id = "img2" src = "와시리2.jpeg" width = "350px" height = "350px"><br><br>
-    </header>
-    <div id= "text">
-    <div id = "name">
-        <p id = "tag" >#사시미  &nbsp; #토마토 스튜 &nbsp; #이자카야</p>
-        <p id = "title">와 시 리</p>
-    </div>
+    <div id = "modal" class = "modal-overlay">
+        <div class = "modal-window">
+            <div class = "content">
+                <span class = "close">&times;</span>
+        <header>
+            <img id = "img_d" src = "와시리(횟집).png" width= "350px" height = "350px">
+            <img id = "img_d" src = "와시리1.jpeg" width = "350px" height = "350px">
+            <img id = "img_d" src = "와시리2.jpeg" width = "350px" height = "350px"><br><br>
+        </header>
+        
+        <br>
 
-    <div class = "info">
+        <div id = "name">
+            <p id = "tag_d" >#사시미  &nbsp; #토마토 스튜 &nbsp; #이자카야</p>
+            <p id = "title_d">와 시 리</p><br>
+        </div>
 
-    <div id = "call">
-        <img id="d1" src="전화_d.jpeg" width="20px" height="20px">
-        <span id="d2">전화</span>
-        <span id="d3">02-2282-0512</span><br><br>
-    </div>
+        <div class = "info">
 
-    <div id = "des">
-        <img id="d1" src="주소_d.jpeg" width="20px" height="20px">
-        <span id="d2">주소</span>
-        <span id="d3">서울 성동구 무학봉 28길 9</span><br><br>
-    </div>
+        <div id = "call">
+            <img id="info1" src="전화_d.jpeg" width="20px" height="20px">
+            <span id="info2">전화</span>
+            <span id="info3">02-2282-0512</span><br><br>
+        </div>
 
-    <div id = "time">
-        <img id = "d1" src = "시계_d.jpeg" width = "20px" height = "20px">
-        <span id = "d2">영업시간</span>
-        <span id = "d3">월-토 17:00 ~ 01:00 <br><br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;매주 일요일 정기휴무</span><br><br>
-    </div>
+        <div id = "des">
+            <img id="info1" src="주소_d.jpeg" width="20px" height="20px">
+            <span id="info2">주소</span>
+            <span id="info3">서울 성동구 무학봉 28길 9</span><br><br>
+        </div>
 
-    <div id = "menu">
-        <img id = "d1" src = "메뉴_d.jpeg" width = "20px" height = "20px">
-        <button type = "button" class = "mn">&nbsp;메뉴판 사진으로 보기!</button><br><br>
-    </div>
+        <div id = "time">
+            <img id = "info1" src = "시계_d.jpeg" width = "20px" height = "20px">
+            <span id = "info2">영업시간</span>
+            <span id = "info3">월-토 17:00 ~ 01:00 <br><br> 매주 일요일 정기휴무 </span><br><br>
+        </div>
 
-    <div id = "spe">
-        <img id = "d1" src = "하트_d.jpeg" width = "15px" height = "15px">
-        <span id = "d2">특징</span>
-        <span id = "d3">2인 / 조용함 / 3만원대 이상 / 일식 / 1차</span>
-    </div>
-    </div>
-    </div>
+        <div id = "menu">
+            <img id = "info1" src = "메뉴_d.jpeg" width = "20px" height = "20px">
+            <button type = "button" class = "mn"> 메뉴판 사진으로 보기!</button><br><br>
+        </div>
+
+        <div id = "spe">
+            <span id = "blank">&nbsp;&nbsp;&nbsp;&nbsp; </span><img id = "info1" src = "하트_d.jpeg" width = "15px" height = "15px">
+            <span id = "info2">특징</span>
+            <span id = "info3">2인 / 조용함 / 3만원대 이상 / 일식 / 1차</span>
+        </div>
+        </div>
+        </div>
+</div>
+
 </body>
 </html>
