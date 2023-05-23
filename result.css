@@ -1,0 +1,93 @@
+* {
+    margin : 0px; 
+    padding : 0px;
+    color : #3f3d42;    
+    font-size: 18px;
+    box-sizing: border-box;
+}
+
+.항목 {
+    background-color : #1d2475;
+    width : 400px;
+    height : 600px;
+    float : left;
+    margin : 0 50px;
+    /*display: none;*/
+
+}
+
+.box-wrapper {
+    width : 1400px;
+}
+
+article {
+    display : block;
+    margin : auto;
+    text-align : center;
+    margin-top : 25px;
+}
+
+h1 {
+    margin-left : 90px;
+    margin-bottom : 25px;
+    margin-top: 30px;
+    font-size : 50px;
+}
+
+#title {
+    font-size : 30px;
+    font-weight : bolder;
+    margin-bottom: 20px;
+}
+
+#title, p, hr {
+    text-align: left;
+    color: white;
+    margin-left : 25px;
+    margin-right: 25px;
+    margin-top : 8px;
+}
+
+#tel {
+    list-style-image : url("전화.png");
+    height: 50px;
+}
+
+#add {
+    list-style-image : url("주소.png");
+    height: 50px;
+}
+
+hr {
+    width : "250px";
+    margin-bottom: 10px;
+
+}
+
+#d1 {
+    float: left;
+    margin-left: 25px;
+}
+
+
+#d2 {
+    color: white;
+    float: left;
+    margin-left: 10px;
+    letter-spacing: 4px;
+}
+
+#d3 {
+    width: 200px;
+    text-align: justify;
+    float: right;
+    color: white;
+    margin-left: 10px;
+    margin-right: 25px;
+    letter-spacing: 4px;
+}
+
+table {
+    table-layout: fixed;
+    border-spacing: 40px;
+}
