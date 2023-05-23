@@ -14,15 +14,9 @@ html, body {
     z-index: -10;
 }
 
-#search {
+#searchsection {
     position: relative;
-    top: 550px;
-    left: 40px;
-}
-
-#search {
-    position: relative;
-    top: 550px;
+    top: 750px;
     left: 40px;
 }
 

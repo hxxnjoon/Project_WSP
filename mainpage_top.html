@@ -17,6 +17,7 @@
     <div class="search">
         <input type="text" id="searchInput" placeholder="상호명 입력">
         <button type="button" id="srcbtn" onclick="search()"><img id ="src-img" src="img_src.png" width="35" height="35"></button>
+        <button type="button" onclick="erase()">X</button>
     </div>
 
     <div class="filtersearch">
@@ -120,7 +121,7 @@
 
     <div class="background-image"></div>
     
-    <div id="search">
+    <div id="searchsection">
     
         <div class="항목" id="곱창하우스">
             <article>
@@ -852,7 +853,7 @@
 
 <!--여기부터 지수가 만든 거-->
 
-    <section>
+    <section id="hotnew">
     
         <h1 id="header">HOT/NEW 술집</h1>
     
@@ -1040,7 +1041,7 @@
 
 
 <!--서윤이가 한 거-->
-    <bottom>
+    <bottom id="alcholdict">
             <h1 id="header">술과사전 : 술에 관한 알쓸신잡</h1>
         
             <article>
