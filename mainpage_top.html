@@ -1,126 +1,123 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>main_search</title>
+    <title>main</title>
     <link rel="stylesheet" href="mainpage_top.css">
     <link type="text/css" rel="stylesheet" href="dict.css">
+    <script type="text/javascript" src="mainpage_top.js" defer></script>
 </head>
 <body>
     <h1 id="sitemain">WEB SYSTEM PROGRAMMING</h1>
     <a id ="mainlogo" href = "mainpage_top.html">W&nbspE&nbspB<br>S&nbspY&nbspS&nbspT&nbspE&nbspM<br>P&nbspR&nbspO&nbspG&nbspR&nbspA&nbspM&nbspM&nbspI&nbspN&nbspG</a>
     <div class="search">
         <input type="text" placeholder="상호명 입력">
-        <img id ="src" src="img_src.png">
+        <button type="button" id="srcbtn"><img id ="src-img" src="img_src.png" width="35" height="35"></button>
     </div>
-    <div class="background-image">
-    </div>
-    <div class="nav">
-        <ul id="category">
-            <li>인원&nbsp수</li>
-            <li>분위기</li>
-            <li>가격대</li>
-            <li>음식&nbsp종류</li>
-
-        </ul>
-    </div>
-    <div class="menu">
-        <ul id="person-checkbox">
-            <li>
-                <input type="checkbox" id="1person" name="person" value="1">
-                <button type="button">
-                    <label for="1person">1인</label>
-                </button>
-            </li>
-            <li>
-                <input type="checkbox" id="2persons" name="person" value="2">
-                <button type="button">
-                    <label for="2persons">2인</label>
-                </button>
-            </li>
-            <li>
-                <input type="checkbox" id="4persons" name="person" value="4">
-                <button type="button">
-                    <label for="4persons">3~6인</label>
-                </button>
-            </li>
-            <li>
-                <input type="checkbox" id="group" name="person" value="group">
-                <button type="button">
-                    <label for="group">7인 이상</label>
-                </button>
-            </li>
-        </ul>
-        <ul id="mood-checkbox">
-            <li>
-                <input type="checkbox" id="loudness" name="mood" value="loudness">
-                <button type="button">
-                    <label for="loudness">시끄러움</label>
-                </button>
-            </li>
-            <li>
-                <input type="checkbox" id="quiet" name="mood" value="quiet">
-                <button type="button">
-                    <label for="quiet">조용함</label>
-                </button>
-            </li>
-        </ul>
-        <ul id="price-checkbox">
-            <li>
-                <input type="checkbox" id="10000" name="price" value="10000">
-                <button type="button">
-                    <label for="10000">1만원대</label>
-                </button>
-            </li>
-            <li>
-                <input type="checkbox" id="20000" name="price" value="20000">
-                <button type="button">
-                    <label for="20000">2만원대</label>
-                </button>
-            </li>
-            <li>
-                <input type="checkbox" id="30000" name="price" value="30000">
-                <button type="button">
-                    <label for="30000">3만원대</label>
-                </button>
-            </li>
-            <li>
-                <input type="checkbox" id="over" name="price" value="over">
-                <button type="button">
-                    <label for="over">3만원대 이상</label>
-                </button>
-            </li>
-        </ul>
-        <ul id="food-checkbox">
-            <li>
-                <input type="checkbox" id="korea" name="food" value="korea">
-                <button type="button">
-                    <label for="korea">한식</label>
-                </button>
-            </li>
-            <li>
-                <input type="checkbox" id="japan" name="food" value="japan">
-                <button type="button">
-                    <label for="japan">일식</label>
-                </button>
-            </li>
-            <li>
-                <input type="checkbox" id="china" name="food" value="china">
-                <button type="button">
-                    <label for="china">중식</label>
-                </button>
-            </li>
-            <li>
-                <input type="checkbox" id="etc" name="food" value="etc">
-                <button type="button">
-                    <label for="etc">기타</label>
-                </button>
-            </li>
-        </ul>
+    <div class="filtersearch">
+        <button type="button" id="btn-modal" class="button">
+            <img id="filter" src="filter.png" width="35" height="35">
+            카테고리 검색
+        </button>
     </div>
 
+    <div id="modal" class="modal-overlay">
+        <div class="modal-window">
+            <div class="close-area">X</div>
+            <div class="content">
+                <div class="nav">
+                    <ul id="category">
+                        <li>인원&nbsp수</li>
+                        <li>분위기</li>
+                        <li>가격대</li>
+                        <li>음식&nbsp종류</li>
+                    </ul>
+                </div>
+                <div class="menu">
+                    <ul id="person-checkbox">
+                        <li>
+                            <input type="checkbox" id="4person" name="person" value="4">
+                            <button type="button" class="menubtn">
+                                <label for="4person">4인 이하</label>
+                            </button>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="5persons" name="person" value="5">
+                            <button type="button" class="menubtn">
+                                <label for="5persons">5인 이상</label>
+                            </button>
+                        </li>
+                    </ul>
+                    <ul id="mood-checkbox">
+                        <li>
+                            <input type="checkbox" id="loudness" name="mood" value="loudness">
+                            <button type="button" class="menubtn">
+                                <label for="loudness">시끄러움</label>
+                            </button>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="quiet" name="mood" value="quiet">
+                            <button type="button" class="menubtn">
+                                <label for="quiet">조용함</label>
+                            </button>
+                        </li>
+                    </ul>
+                    <ul id="price-checkbox">
+                        <li>
+                            <input type="checkbox" id="20000" name="price" value="20000">
+                            <button type="button" class="menubtn">
+                                <label for="20000">2만원대 이하</label>
+                            </button>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="30000" name="price" value="30000">
+                            <button type="button" class="menubtn">
+                                <label for="30000">3만원대 이상</label>
+                            </button>
+                        </li>
+                    </ul>
+                    <ul id="food-checkbox">
+                        <li>
+                            <input type="checkbox" id="korea" name="food" value="korea">
+                            <button type="button" class="menubtn">
+                                <label for="korea">한식</label>
+                            </button>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="japan" name="food" value="japan">
+                            <button type="button" class="menubtn">
+                                <label for="japan">일식</label>
+                            </button>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="china" name="food" value="china">
+                            <button type="button" class="menubtn">
+                                <label for="china">중식</label>
+                            </button>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="etc" name="food" value="etc">
+                            <button type="button" class="menubtn">
+                                <label for="etc">기타</label>
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+                <div class="categorysrc">
+                    <button type="button" id="ctgbtn" class="button">
+                        검색하기
+                    </button>
+                </div>
+            
+            </div>
+        </div>
+    </div>
+
+    </div>
+    <div class="background-image"></div>
+    
     
 
 <!--여기부터 지수가 만든 거-->
@@ -313,7 +310,7 @@
 
 
         <!--서윤이가 한 거-->
-        <section>
+        <bottom>
             <h1 id="header">술과사전 : 술에 관한 알쓸신잡</h1>
         
             <article>
@@ -491,6 +488,6 @@
         
         
         
-            </section>
+        </bottom>
 </body>
 </html>
