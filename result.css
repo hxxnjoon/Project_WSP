@@ -5,6 +5,9 @@
     font-size: 18px;
     box-sizing: border-box;
 }
+body {
+    width: 1635px;
+}
 
 .항목 {
     background-color : #1d2475;
