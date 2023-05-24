@@ -8,12 +8,12 @@
 
     <script>
         function collapse(element) {
-            var before = document.getElementsByClassName("active")[0]               
-            if (before && document.getElementsByClassName("active")[0] != element) {  
+            var before = document.getElementsByClassName("activeDict")[0]               
+            if (before && document.getElementsByClassName("activeDict")[0] != element) {  
                 before.nextElementSibling.style.maxHeight = null;  
-                before.classList.remove("active");                 
+                before.classList.remove("activeDict");                 
             }
-            element.classList.toggle("active");      
+            element.classList.toggle("activeDict");      
 
             var content = element.nextElementSibling;
             if (content.style.maxHeight != 0) {       
@@ -270,10 +270,10 @@
 			slides[i].style.display = "none";  
 		}
 		for (i = 0; i < dots.length; i++) {
-			dots[i].className = dots[i].className.replace(" active", "");
+			dots[i].className = dots[i].className.replace(" activeDict", "");
 		}
 		slides[slideIndex-1].style.display = "block";  
-		dots[slideIndex-1].className += " active";
+		dots[slideIndex-1].className += " activeDictDict";
 		}
 	</script>
 

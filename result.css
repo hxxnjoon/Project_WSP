@@ -5,9 +5,12 @@
     font-size: 18px;
     box-sizing: border-box;
 }
-body {
-    width: 1635px;
+
+#searchsection {
+    width: 1850px;
+    margin: -250px 125px;
 }
+
 
 .항목 {
     background-color : #1d2475;
@@ -16,11 +19,10 @@ body {
     float : left;
     margin : 20px 50px;
     display: none;
-
 }
 
-.box-wrapper {
-    width : 1400px;
+#serachbox {
+    max-width : 1600px;
 }
 
 article {

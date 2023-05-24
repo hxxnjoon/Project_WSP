@@ -7,7 +7,7 @@ html, body {
 .background-image {
     position: absolute;
     top:0px;
-    width: 1635px;
+    width: 1850px;
     height: 500px;
     background-image: url("img_main.jpg");
     margin-top: -30px;
@@ -50,18 +50,24 @@ input[type="text"]:focus {
     outline: 1px solid navy;
 }
 
-#srcbtn {
+#srcbtn, #resetbtn {
     position: relative;
     width: 50px;
     height: 50px;
     top: -50px;
-    left: 770px;
+    left: 670px;
     background-color:transparent;
     border-style:none;
 }
 
 #srcbtn:hover{
     cursor: pointer;
+}
+
+
+#resetbtn {
+    position: relative;
+    display: inline-block;
 }
 
 #sitemain {

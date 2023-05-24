@@ -12,7 +12,7 @@ img {
 }
 
 .slideshow-container {
-    max-width: 1200px;
+    max-width: 1600px;
     position: relative;
     margin: 0px 0px 0px 90px;
 }
@@ -22,19 +22,19 @@ img {
     color: white;
     cursor: pointer;
     padding: 18px;
-    width: 1200px;
+    width: 1600px;
     border: none;
     text-align: left;
     outline: none;
     font-size: 25px;
 }
-.active,
+.activeDict,
 .collapsible:hover {
     background-color: white;
     color: #1d2475;
 }
 .content {
-    width: 1200px;
+    width: 1600px;
     padding: 0 18px;
     max-height: 0;
     overflow: hidden;
@@ -49,7 +49,7 @@ img {
     float: right;
     margin-left: 5px;
 }
-.active:after {
+.activeDict:after {
     content: "\2212";
 }
 
@@ -89,7 +89,7 @@ img {
   transition: background-color 0.6s ease;
 }
 
-.active, .dot:hover {
+.activeDict, .dot:hover {
   background-color: white;
 }
 
@@ -199,7 +199,7 @@ h2 {
     display: block;
 }
 
-.dictitle.active .diccontent {
+.dictitle.activeDict .diccontent {
     display: none; 
 }
 
@@ -241,7 +241,7 @@ dd {
 #dict_little_title
 {
     margin-left: 25px;
-    width: 1200px;
+    width: 1600px;
     padding: 10px; 
     margin: 0; 
     font-weight: bold;  
