@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./resultlist.css">
+    <script type="text/javascript" src="resultlist.js"></script>
+
 
 </head>
 <body>
@@ -17,7 +19,7 @@
        
          <div class="upperbar"> 
 
-            <h1 id="sitemain">술집 &nbsp;&nbsp;추천&nbsp;&nbsp; 결과&nbsp;&nbsp; 7곳 </h1>
+            <h1 id="sitemain">술집&nbsp;&nbsp;검색&nbsp;&nbsp;조건&nbsp;&nbsp;페이지  </h1>
             <a id ="mainlogo" href = "mainpage_top.html">W&nbspE&nbspB<br>S&nbspY&nbspS&nbspT&nbspE&nbspM<br>P&nbspR&nbspO&nbspG&nbspR&nbspA&nbspM&nbspM&nbspI&nbspN&nbspG</a>
             <div class="result-top">
                  
@@ -28,11 +30,39 @@
 
          <div class="background-image"></div>
 
+
+         <div class="category">
+            <ol>
+                <li>
+                    <input type='radio' name='person' value=4 onclick="personcheck(event);"/> 4인
+                    <input type='radio' name='person' value=5 onclick="personcheck(event);"/> 5인
+                </li>
+                 <br>
+                <li>
+                    <input type='radio' name='mood' value='quiet' onclick="moodcheck(event);"/> 조용함
+                    <input type='radio' name='mood' value='loudness' onclick="moodcheck(event);"/> 시끄러움
+                </li>
+                 <br>
+                <li>
+                    <input type='radio' name='price' value=20000 onclick="pricecheck(event);"/> 2만원대
+                    <input type='radio' name='price' value=30000 onclick="pricecheck(event);"/> 3만원대
+                </li>
+                 <br>
+                <li>
+                    <input type='radio' name='food' value='korea' onclick="foodcheck(event);"/> 한식
+                    <input type='radio' name='food' value='japan' onclick="foodcheck(event);"/> 일식
+                    <input type='radio' name='food' value='china' onclick="foodcheck(event);"/> 중식
+                    <input type='radio' name='food' value='etc' onclick="foodcheck(event);"/> 기타
+                </li>
+            </ol>
+         </div>
+
          
          <ol class="image-list">
-            <li>
+            
+            <li class="술집" id="갱생">
                 <figure>
-                    <img src="./detailed_pages/팔각도.jpg">
+                    <img src="./detailed_pages/갱생.jpg">
                     <figcaption>
                         <p> </p>
                         <p> </p>
@@ -41,7 +71,28 @@
 
             </li>
             
-            <li>
+            <li class="술집" id="곱창하우스">
+                <figure>
+                    <img src="./detailed_pages/곱창하우스.jpg">
+                    <figcaption>
+                        <p> </p>
+                        <p> </p>
+                    </figcaption>
+                </figure>
+            </li>
+             
+
+            <li class="술집" id="깡우동">
+                <figure>
+                    <img src="./detailed_pages/깡우동.jpg">
+                    <figcaption>
+                        <p> </p>
+                        <p> </p>
+                    </figcaption>
+                </figure>
+            </li>
+
+            <li class="술집" id="단골손님">
                 <figure>
                     <img src="./detailed_pages/단골손님.jpg">
                     <figcaption>
@@ -50,8 +101,8 @@
                     </figcaption>
                 </figure>
             </li>
-             
-            <li>
+
+            <li class="술집" id="대동집">
                 <figure>
                     <img src="./detailed_pages/대동집.jpg">
                     <figcaption>
@@ -61,7 +112,17 @@
                 </figure>
             </li>
 
-            <li>
+            <li class="술집" id="돼지꿈">
+                <figure>
+                    <img src="./detailed_pages/돼지꿈.jpg">
+                    <figcaption>
+                        <p> </p>
+                        <p> </p>
+                    </figcaption>
+                </figure>
+            </li>
+
+            <li class="술집" id="땅코참숯구이">
                 <figure>
                     <img src="./detailed_pages/땅코참숯구이.jpg">
                     <figcaption>
@@ -71,9 +132,9 @@
                 </figure>
             </li>
 
-            <li>
+            <li class="술집" id="리퀴진">
                 <figure>
-                    <img src="./detailed_pages/쭈꾸미도사.jpg">
+                    <img src="./detailed_pages/리퀴진.jpg">
                     <figcaption>
                         <p> </p>
                         <p> </p>
@@ -81,7 +142,27 @@
                 </figure>
             </li>
 
-            <li>
+            <li class="술집" id="메종드혁이네">
+                <figure>
+                    <img src="./detailed_pages/메종드혁이네.jpg">
+                    <figcaption>
+                        <p> </p>
+                        <p> </p>
+                    </figcaption>
+                </figure>
+            </li> 
+
+            <li class="술집" id="부엉이산장">
+                <figure>
+                    <img src="./detailed_pages/부엉이산장.jpg">
+                    <figcaption>
+                        <p> </p>
+                        <p> </p>
+                    </figcaption>
+                </figure>
+            </li>
+
+            <li class="술집" id="싱싱오징어바다">
                 <figure>
                     <img src="./detailed_pages/싱싱오징어바다.jpg">
                     <figcaption>
@@ -91,9 +172,9 @@
                 </figure>
             </li>
 
-            <li>
+            <li class="술집" id="여운">
                 <figure>
-                    <img src="./detailed_pages/곱창하우스.jpg">
+                    <img src="./detailed_pages/여운.jpg">
                     <figcaption>
                         <p> </p>
                         <p> </p>
@@ -101,6 +182,151 @@
                 </figure>
             </li>
 
+            <li class="술집" id="오감">
+                <figure>
+                    <img src="./detailed_pages/오감.jpg">
+                    <figcaption>
+                        <p> </p>
+                        <p> </p>
+                    </figcaption>
+                </figure>
+            </li>
+
+        
+
+            <li class="술집" id="와시리">
+                <figure>
+                    <img src="./detailed_pages/와시리.jpg">
+                    <figcaption>
+                        <p> </p>
+                        <p> </p>
+                    </figcaption>
+                </figure>
+            </li>
+
+            <li class="술집" id="용용선생">
+                <figure>
+                    <img src="./detailed_pages/용용선생.jpg">
+                    <figcaption>
+                        <p> </p>
+                        <p> </p>
+                    </figcaption>
+                </figure>
+            </li>
+
+            <li class="술집" id="육회공작소">
+                <figure>
+                    <img src="./detailed_pages/육회공작소.jpg">
+                    <figcaption>
+                        <p> </p>
+                        <p> </p>
+                    </figcaption>
+                </figure>
+            </li>
+
+            <li class="술집" id="이가갈비">
+                <figure>
+                    <img src="./detailed_pages/이가갈비.jpg">
+                    <figcaption>
+                        <p> </p>
+                        <p> </p>
+                    </figcaption>
+                </figure>
+            </li>
+
+            <li class="술집" id="이돈집">
+                <figure>
+                    <img src="./detailed_pages/이돈집.jpg">
+                    <figcaption>
+                        <p> </p>
+                        <p> </p>
+                    </figcaption>
+                </figure>
+            </li> 
+
+            <li class="술집" id="장모족발">
+                <figure>
+                    <img src="./detailed_pages/장모족발.jpg">
+                    <figcaption>
+                        <p> </p>
+                        <p> </p>
+                    </figcaption>
+                </figure>
+            </li>
+
+            <li class="술집" id="제일곱창">
+                <figure>
+                    <img src="./detailed_pages/제일곱창.jpg">
+                    <figcaption>
+                        <p> </p>
+                        <p> </p>
+                    </figcaption>
+                </figure>
+            </li>
+
+            <li class="술집" id="종로계림닭도리탕원조">
+                <figure>
+                    <img src="./detailed_pages/종로계림닭도리탕원조.jpg">
+                    <figcaption>
+                        <p> </p>
+                        <p> </p>
+                    </figcaption>
+                </figure>
+            </li>
+
+            <li class="술집" id="쭈꾸미도사">
+                <figure>
+                    <img src="./detailed_pages/쭈꾸미도사.jpg">
+                    <figcaption>
+                        <p> </p>
+                        <p> </p>
+                    </figcaption>
+                </figure>
+            </li>
+
+            <li class="술집" id="팔각도">
+                <figure>
+                    <img src="./detailed_pages/팔각도.jpg">
+                    <figcaption>
+                        <p> </p>
+                        <p> </p>
+                    </figcaption>
+                </figure>
+            </li>
+
+            <li class="술집" id="포차윤">
+                <figure>
+                    <img src="./detailed_pages/포차윤.jpg">
+                    <figcaption>
+                        <p> </p>
+                        <p> </p>
+                    </figcaption>
+                </figure>
+            </li>
+
+            <li class="술집" id="한양대육회집">
+                <figure>
+                    <img src="./detailed_pages/한양대육회집.jpg">
+                    <figcaption>
+                        <p> </p>
+                        <p> </p>
+                    </figcaption>
+                </figure>
+            </li>
+
+            <li class="술집" id="한양포차">
+                <figure>
+                    <img src="./detailed_pages/한양포차.jpg">
+                    <figcaption>
+                        <p> </p>
+                        <p> </p>
+                    </figcaption>
+                </figure>
+            </li>
+
+
+
+         
          </ol>
       </div>
 
