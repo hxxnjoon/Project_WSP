@@ -38,10 +38,10 @@
     
       document.getElementById('searchsection').style.display = "block";
       
-      let personchecked;
-      let moodchecked;
-      let pricechecked;
-      let foodchecked;
+      let personchecked=[];
+      let moodchecked=[];
+      let pricechecked=[];
+      let foodchecked=[];
 
       personchecked = Array.from(document.querySelectorAll('input[name="person"]:checked')).map(input => input.value);
       moodchecked = Array.from(document.querySelectorAll('input[name="mood"]:checked')).map(input => input.value);

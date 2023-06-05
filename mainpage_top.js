@@ -6,10 +6,6 @@ const modal = document.getElementById("modal")
     function modalOff() {
         modal.style.display = "none"
         document.body.style.overflow = "";
-
-        $('#modal-add').on('hidden.bs.modal', function (e) {
-            $(this).find('form')[0].reset()
-        });
     }
 
 
@@ -29,7 +25,7 @@ const modal = document.getElementById("modal")
             modal.style.display = "none"
         }
     })
-
+    
     var buttons = document.getElementsByClassName("menubtn");
     for (var i = 0; i < buttons.length; i++) {
         buttons[i].addEventListener("click", function() {
