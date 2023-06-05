@@ -16,6 +16,7 @@ function search() {
             item.style.display = "none";
         }
     }
+    
 
     document.getElementById('searchresult').innerHTML = '"'+ input + '"' + "에 대한 검색 결과";
 }

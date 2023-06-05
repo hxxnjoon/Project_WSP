@@ -6,7 +6,14 @@ const modal = document.getElementById("modal")
     function modalOff() {
         modal.style.display = "none"
         document.body.style.overflow = "";
+
+        $('#modal-add').on('hidden.bs.modal', function (e) {
+            $(this).find('form')[0].reset()
+        });
     }
+
+
+
     const btnModal = document.getElementById("btn-modal")
     btnModal.addEventListener("click", e => {
         modalOn()
@@ -23,11 +30,10 @@ const modal = document.getElementById("modal")
         }
     })
 
-    modalOff();
-
     var buttons = document.getElementsByClassName("menubtn");
     for (var i = 0; i < buttons.length; i++) {
         buttons[i].addEventListener("click", function() {
         this.classList.toggle("active");
     });
   }
+  
