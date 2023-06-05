@@ -32,4 +32,8 @@ const modal = document.getElementById("modal")
         this.classList.toggle("active");
     });
   }
-  
+
+  function toggleCheckbox(checkboxId) {
+    var checkbox = document.getElementById(checkboxId);
+    checkbox.checked = !checkbox.checked;
+  }
