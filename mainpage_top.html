@@ -12,7 +12,7 @@
     <script type="text/javascript" src="mainpage_top.js" defer></script>
     <script type="text/javascript" src="result.js"></script>
     <script type="text/javascript" src="dict.js" defer></script>
-    <script type="text/javascript" src="search_condition.js"></script>
+    <script type="text/javascript" src="category.js"></script>
 </head>
 <body>
     <h1 id="sitemain">WEB SYSTEM PROGRAMMING</h1>
@@ -114,7 +114,7 @@
                     </ul>
                 </div>
                 <div class="categorysrc">
-                    <button type="button" id="ctgbtn" class="button">
+                    <button type="button" id="ctgbtn" class="button" onclick = "catesrc()">
                         검색하기
                     </button>
                 </div>
@@ -124,7 +124,7 @@
     </div>
 
     <div class="background-image"></div>
-    
+
     <div id="searchsection">
         <h1 id="searchresult"></h1>
         <div id="searchbox">
@@ -796,7 +796,7 @@
             </article>
         </div>
     
-        <div class="항목" id="한양대 육회집">
+        <div class="항목" id="한양대육회집">
             <article>
                 <img id="img" src="detailed_pages/한양대육회집.jpg" width="350px" height="280px">
                 <p id="tag">#당일도축 #쫀득한 뭉티기</p>

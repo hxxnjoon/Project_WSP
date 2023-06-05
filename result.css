@@ -11,6 +11,14 @@
     margin: -250px 125px;
 }
 
+.categorycontent {
+    background-color : #1d2475;
+    width : 400px;
+    height : 600px;
+    float : left;
+    margin : 20px 50px;
+    
+}
 
 .항목 {
     background-color : #1d2475;
@@ -21,7 +29,7 @@
     display: none;
 }
 
-#serachbox {
+#searchbox {
     max-width : 1600px;
 }
 

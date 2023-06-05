@@ -1,0 +1,80 @@
+
+body{
+    margin: 0px 500px;
+    height: 600px;
+    
+}
+
+h1{
+    text-align: center;
+    color:white;
+    font-size: 50px;
+    position:absolute;
+    top: 40px;
+    left: 700px;
+    
+    
+}
+
+#mainlogo{
+    position:absolute;
+    left: 10px;
+    top: 10px;
+    color:white;
+}
+
+ol, ul{
+    list-style:none;
+}
+
+.container {
+    
+    margin-top: 51px;
+}
+
+.upperbar{
+    height: 200px;
+
+}
+
+
+
+.image-list li{
+    margin-top: 70px;
+    background-color:#1d2475;
+    height: 300px;
+    margin-bottom: 50px;
+    
+}
+
+img{
+  width: 230px;
+  height: 230px;
+  object-fit: cover;
+  padding: 40px;
+  
+  
+}
+
+
+.background-image{
+    position: absolute;
+    top:0px;
+    left: 0px;
+    right:0px;
+    width: 2000px;
+    height: 250px;
+    background-image: url("img_main.jpg");
+    margin-top: -30px;
+    margin-left:0px;
+    margin-right: 0px;
+
+    z-index: -10;
+}
+
+figcaption{
+   float:right;
+    border: 1px solid black;
+    background-color: white;
+}
+
