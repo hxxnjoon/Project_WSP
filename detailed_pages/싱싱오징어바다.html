@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <title>싱 싱 오 징 어 바 다</title>
+    <link type="text/css" rel="stylesheet" href="detailed_page.css">
+</head>
+<body>
+    <div id = "entire">
+        <header>
+            <img id = "img_d" src = "싱싱오징어바다.jpg" width= "350px" height = "350px">
+            <img id = "img_d" src = "싱싱오징어바다1.jpg" width = "350px" height = "350px">
+            <img id = "img_d" src = "싱싱오징어바다2.jpg" width = "350px" height = "350px"><br><br>
+        </header>
+        
+        <br>
+
+        <div id = "name">
+            <p id = "tag_d" >#수산시장  &nbsp; #싱싱횟집 &nbsp; #북적북적</p>
+            <p id = "title_d">싱 싱 오 징 어 바 다</p><br>
+        </div>
+
+        <div class="box">
+        <div class = "info">
+    
+        <div id = "call">
+            <br>
+            <img id="info1" src="전화_d.jpeg" width="20px" height="20px">
+            <span id="info2">전화</span>
+            <span id="info3">02-2295-3660</span><br><br>
+        </div>
+
+        <div id = "des">
+            <br>
+            <img id="info1" src="주소_d.jpeg" width="20px" height="20px">
+            <span id="info2">주소</span>
+            <span id="info3">서울 성동구 마조로7길 6</span><br><br>
+        </div>
+
+        <div id = "time">
+            <br>
+            <img id = "info1" src = "시계_d.jpeg" width = "20px" height = "20px">
+            <span id = "info2">영업시간</span>
+            <span id = "info3">매일 15:00 ~ 02:00 </span><br>
+        </div>
+
+        <br><br>
+        <div id = "menu">
+            <img id = "info1" src = "메뉴_d.jpeg" width = "20px" height = "20px">
+            <span type = "button" id="openModalmenu">메뉴판 사진으로 보기 !</span>
+
+            <div id="myModal" class="modal">
+                <span class="close">&times;</span>
+                <img class="modal-content" id="modalImage">
+            </div>
+
+        </div>
+
+        <div id = "spe">
+            <br><br><br>
+            <span id = "blank">&nbsp;&nbsp;&nbsp;&nbsp; </span><img id = "info1" src = "하트_d.jpeg" width = "15px" height = "15px">
+            <span id = "info2">특징</span>
+            <span id = "info3">3인 이하 / 시끄러움 / 1~2만원대 / 한식 </span>
+        </div>
+        </div>
+
+        <span id = "blank">&nbsp;&nbsp;&nbsp;</span><button type="button" id="backto" onclick="location.href='../mainpage_top.html'">메인페이지로!</button>
+    </div>
+</div>
+</div>
+<script>
+    // 모달 열기
+    document.getElementById("openModalmenu").addEventListener("click", function() {
+    document.getElementById("myModal").style.display = "block";
+    document.getElementById("modalImage").src = "메뉴_싱싱오징어바다.jpg"; 
+    });
+    document.addEventListener("click", function(event) {
+        var modal = document.getElementById("myModal");
+        var closeBtn = document.getElementsByClassName("close")[0];
+        if (event.target == modal || event.target == closeBtn) {
+            modal.style.display = "none";
+        }
+    });
+</script>
+</body>
+</html>
