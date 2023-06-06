@@ -1,33 +1,25 @@
-document.addEventListener("DOMContentLoaded", function() {
-    var openModalBtn = document.getElementById("openModalBtn");
-    var modal = document.getElementById("myModal");
-    var modalContent = document.getElementById("modalContent");
-    var closeModal = document.getElementsByClassName("close")[0];
-  
-    openModalBtn.addEventListener("click", function() {
-      var xhr = new XMLHttpRequest();
-      xhr.onreadystatechange = function() {
-        if (xhr.readyState === 4) {
-          if (xhr.status === 200) {
-            modalContent.innerHTML = xhr.responseText;
-            modal.style.display = "block";
-          } else {f
-            alert("Failed to load external content.");
-          }
-        }
-      };
-      xhr.open("GET", "detailed_page.html");
-      xhr.send();
-    });
-  
-    closeModal.addEventListener("click", function() {
-      modal.style.display = "none";
-    });
-  
-    window.addEventListener("click", function(event) {
-      if (event.target === modal) {
-        modal.style.display = "none";
-      }
-    });
-  });
-  
+function openModal_d(htmlFile) {
+  var modal = document.getElementById("modal_d");
+  var modalContent = document.getElementById("modalContent_d");
+
+  var xhttp = new XMLHttpRequest();
+  xhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+      modalContent.innerHTML = this.responseText;
+      modal.style.display = "block";
+      modalContent.style.backgroundColor = "#ffffff";
+    } else if (this.readyState == 4) {
+      alert("외부 HTML 파일을 로드하는 중에 오류가 발생했습니다.");
+    }
+  };
+  xhttp.open("GET", htmlFile, true);
+  xhttp.send();
+}
+
+function closeModal_d() {
+  var modal = document.getElementById("modal_d");
+  var modalContent = document.getElementById("modalContent_d");
+
+  modalContent.innerHTML = "";
+  modal.style.display = "none";
+}
