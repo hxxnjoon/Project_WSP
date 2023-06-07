@@ -51,10 +51,10 @@ button.mn {
 }
 
 #menu {
-  float: right;
-  position: absolute;
-  right: 0px;
-  top: 410px;
+  position: relative;
+  left: 500px;
+  top: 500px;
+  margin: auto;
 }
 
 .modal {
@@ -81,8 +81,9 @@ button.mn {
     overflow-y: auto;
     position: absolute;
     left: 45%;
-    top: 18%;
+    top: 50%;
     transform: translate(-50%, -50%);
   }
+  
   
   

@@ -31,7 +31,7 @@ function erase() {
 }
 
 function handleKeyDown(event) {
-    if (event.keyCode === 13) { // 13은 엔터 키의 keyCode입니다.
+    if (event.keyCode === 13) {
         search();
     }
 }
