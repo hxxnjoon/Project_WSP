@@ -13,35 +13,36 @@ function resetSearch() {
   });
 }
      let lists=[
-     {name:"팔각도", person: "3", mood: "loudness", price:"20000",food:"korea"}, 
-     {name:"단골손님", person: "3", mood: "loudness", price:"20000",food:"korea"},
-     {name:"대동집", person: "3", mood: "loudness", price:"20000",food:"korea"},
+     {name:"팔각도", person: "4", mood: "loudness", price:"30000",food:"korea"}, 
+     {name:"단골손님", person: "4", mood: "quiet", price:"20000",food:"korea"},
+     {name:"대동집", person: "4", mood: "loudness", price:"20000",food:"korea"},
      {name:"땅코참숯구이", person: "3", mood: "loudness", price:"20000",food:"korea"},
-     {name:"쭈꾸미도사", person: "3", mood: "loudness", price:"20000",food:"korea"},
+     {name:"쭈꾸미도사", person: "4", mood: "loudness", price:"30000",food:"korea"},
+     {name:"깡우동", person: "3", mood: "loudness", price:"20000",food:"korea"},
      
-     {name:"싱싱오징어바다", person: "3", mood: "loudness", price:"20000",food:"korea"},
+     {name:"싱싱오징어바다", person: "4", mood: "quiet", price:"30000",food:"korea"},
      {name:"곱창하우스", person: "3", mood: "loudness", price:"20000",food:"korea"},
-     {name:"오감", person: "3", mood: "quiet", price:"20000",food:"japan"},
+     {name:"오감", person: "3", mood: "quiet", price:"30000",food:"japan"},
      {name:"이돈집", person: "3", mood: "loudness", price:"20000",food:"korea"},
      {name:"여운", person: "3", mood: "quiet", price:"30000",food:"japan"},
      
      {name:"와시리", person: "3", mood: "quiet", price:"30000",food:"japan"},
      {name:"갱생", person: "4", mood: "loudness", price:"20000",food:"etc"},
-     {name:"리퀴진", person: "3", mood: "loudness", price:"20000",food:"etc"},
+     {name:"리퀴진", person: "3", mood: "quiet", price:"20000",food:"etc"},
      {name:"육회공작소", person: "3", mood: "quiet", price:"30000",food:"korea"},
      {name:"돼지꿈", person: "4", mood: "loudness", price:"20000",food:"korea"},
     
-     {name:"이가갈비", person: "4", mood: "loudness", price:"20000",food:"korea"},
+     {name:"이가갈비", person: "4", mood: "loudness", price:"30000",food:"korea"},
      {name:"장모족발", person: "4", mood: "loudness", price:"20000",food:"korea"},
      {name:"용용선생", person: "3", mood: "loudness", price:"20000",food:"china"},
      {name:"제일곱창", person: "3", mood: "loudness", price:"30000",food:"korea"},
      {name:"종로계림닭도리탕원조", person: "3", mood: "quiet", price:"20000",food:"korea"},
      
-     {name:"포차윤", person: "3", mood: "quiet", price:"20000",food:"etc"},
+     {name:"포차윤", person: "4", mood: "quiet", price:"20000",food:"etc"},
      {name:"한양대육회집", person: "4", mood: "quiet", price:"30000",food:"korea"},
      {name:"한양포차", person: "4", mood: "quiet", price:"20000",food:"korea"},
-     {name:"메종드혁이네", person: "3", mood: "loudness", price:"30000",food:"korea"},
-     {name:"부엉이산장", person: "3", mood: "loudness", price:"30000",food:"korea"}
+     {name:"메종드혁이네", person: "4", mood: "quiet", price:"30000",food:"korea"},
+     {name:"부엉이산장", person: "3", mood: "quiet", price:"30000",food:"korea"}
      ];
 
     let personchecked;

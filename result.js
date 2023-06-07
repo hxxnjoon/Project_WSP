@@ -29,3 +29,9 @@ function erase() {
     document.getElementById('searchInput').value = "";
 
 }
+
+function handleKeyDown(event) {
+    if (event.keyCode === 13) { // 13은 엔터 키의 keyCode입니다.
+        search();
+    }
+}

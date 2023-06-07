@@ -15,13 +15,13 @@
     <script type="text/javascript" src="dict.js" defer></script>
 </head>
 <body>
-    <h1 id="sitemain">WEB SYSTEM PROGRAMMING</h1>
-    <a id ="mainlogo" href = "mainpage_top.html">W&nbspE&nbspB<br>S&nbspY&nbspS&nbspT&nbspE&nbspM<br>P&nbspR&nbspO&nbspG&nbspR&nbspA&nbspM&nbspM&nbspI&nbspN&nbspG</a>
+    <h1 id="sitemain">DRUNKEN LION</h1>
+    <a id ="mainlogo" href = "mainpage_top.html">D&nbspR&nbspU&nbspN&nbspK&nbspE&nbspN<br>L&nbspI&nbspO&nbspN</a>
     <div class="search">
-        <input type="text" id="searchInput" placeholder="상호명 입력">
+        <input type="text" id="searchInput" placeholder="상호명 입력" onkeydown="handleKeyDown(event)">
 
         <button type="button" id="srcbtn" onclick="search()"><img id ="src-img" src="img_src.png" width="35" height="35"></button>
-        <button id="resetbtn" type="button" onclick="erase()"><img id ="src-img" src="reset.jpg" width="48" height="48"></button>
+
     </div>
 
     <div class="filtersearch">
@@ -152,7 +152,9 @@
         
                 <br>
         
-                <button type="button" class="button" onclick="location.href='detailed_pages/곱창하우스.html'">자세히 보기 !</button>
+                <button type="button" class="button" data-target="곱창하우스" onclick="openModal('곱창하우스')">자세히 보기 !</button>
+
+
             </article>
         </div>
     
@@ -181,7 +183,38 @@
         
                 <br>
         
-                <button type="button" class="button" onclick="location.href='detailed_pages/갱생.html'">자세히 보기 !</button>
+                <button type="button" class="button" id="openModal" onclick="openModal('갱생')">자세히 보기 !</button>
+
+            </article>
+        </div>
+
+        <div class="항목" id="깡우동">
+            <article>
+                <img id="img" src="detailed_pages/깡우동.jpg" width="350px" height="280px">
+                <p id="tag">#매운우동 #탕수육 #가성비</p>
+                <p id="title">"깡우동"</p>
+                <hr>
+        
+                <div id="des">
+                    <img id="d1" src="전화.jpg" width="20px" height="20px">
+                    <span id="d2">전화</span>
+                    <span id="d3">02-2298-5432</span>
+                    <br>
+                </div>
+        
+                <br>
+        
+                <div id="des">
+                    <img id="d1" src="주소.jpg" width="20px" height="20px">
+                    <span id="d2">주소</span>
+                    <span id="d3">서울 성동구 마조로3가길 25</span>
+                    <br>
+                </div>
+        
+                <br>
+        
+                <button type="button" class="button" id="openModal" onclick="openModal('깡우동')">자세히 보기 !</button>
+
             </article>
         </div>
     
@@ -212,7 +245,7 @@
         
                 <br>
         
-                <button type="button" class="button" onclick="location.href='detailed_pages/단골손님.html'">자세히 보기 !</button>
+                <button type="button" class="button" data-target="단골손님" onclick="openModal('단골손님')">자세히 보기 !</button>
             </article>
         </div>
     
@@ -241,7 +274,7 @@
         
                 <br>
         
-                <button type="button" class="button" onclick="location.href='detailed_pages/대동집.html'">자세히 보기 !</button>
+                <button type="button" class="button" data-target="대동집" onclick="openModal('대동집')">자세히 보기 !</button>
             </article>
         </div>
 
@@ -270,7 +303,7 @@
         
                 <br>
         
-                <button type="button" class="button" onclick="location.href='detailed_pages/돼지꿈.html'">자세히 보기 !</button>
+                <button type="button" class="button" data-target="돼지꿈" onclick="openModal('돼지꿈')">자세히 보기 !</button>
             </article>
         </div>
     
@@ -299,7 +332,7 @@
     
                     <br>
     
-                    <button type="button" class="button" onclick="location.href='detailed_pages/땅코참숯구이.html'">자세히 보기 !</button>
+                    <button type="button" class="button" data-target="땅코참숯구이" onclick="openModal('땅코참숯구이')">자세히 보기 !</button>
                 </article>
             </div>
     
@@ -327,7 +360,7 @@
                     </div>
                     <br>
             
-                    <button type="button" class="button" onclick="location.href='detailed_pages/리퀴진.html'">자세히 보기 !</button>
+                    <button type="button" class="button" data-target="리퀴진" onclick="openModal('리퀴진')">자세히 보기 !</button>
                 </article>
             </div>
     
@@ -356,7 +389,7 @@
             
                     <br>
             
-                    <button type="button" class="button" onclick="location.href='detailed_pages/메종드혁이네.html'">자세히 보기 !</button>
+                    <button type="button" class="button" data-target="메종드혁이네" onclick="openModal('메종드혁이네')">자세히 보기 !</button>
                 </article>
             </div>
     
@@ -385,7 +418,7 @@
             
                     <br>
             
-                    <button type="button" class="button" onclick="location.href='detailed_pages/부엉이산장.html'">자세히 보기 !</button>
+                    <button type="button" class="button" data-target="부엉이산장" onclick="openModal('부엉이산장')">자세히 보기 !</button>
                 </article>
             </div>
     
@@ -414,7 +447,7 @@
             
                     <br>
             
-                    <button type="button" class="button" onclick="location.href='detailed_pages/오감.html'">자세히 보기 !</button>
+                    <button type="button" class="button" data-target="오감" onclick="openModal('오감')">자세히 보기 !</button>
                 </article>
             </div>
     
@@ -443,7 +476,7 @@
             
                     <br>
             
-                    <button type="button" class="button" onclick="location.href='detailed_pages/싱싱오징어바다.html'">자세히 보기 !</button>
+                    <button type="button" class="button" data-target="싱싱오징어바다" onclick="openModal('싱싱오징어바다')">자세히 보기 !</button>
                 </article>
             </div>
     
@@ -472,7 +505,7 @@
             
                     <br>
             
-                    <button type="button" class="button" onclick="location.href='detailed_pages/여운.html'">자세히 보기 !</button>
+                    <button type="button" class="button" data-target="여운" onclick="openModal('여운')">자세히 보기 !</button>
                 </article>
             </div>
     
@@ -499,7 +532,7 @@
                     <br>
                 </div>
                 <br>
-                <button type="button" class="button" onclick="location.href='detailed_pages/용용선생.html'">자세히 보기 !</button>
+                <button type="button" class="button" data-target="용용선생" onclick="openModal('용용선생')">자세히 보기 !</button>
             </article> 
         </div>
     
@@ -528,7 +561,7 @@
     
                 <br>
     
-                <button type="button" class="button" onclick="location.href='detailed_pages/육회공작소.html'">자세히 보기 !</button>
+                <button type="button" class="button" data-target="육회공작소" onclick="openModal('육회공작소')">자세히 보기 !</button>
             </article>
         </div>
     
@@ -557,7 +590,7 @@
     
                 <br>
     
-                <button type="button" class="button" onclick="location.href='detailed_pages/와시리.html'">자세히 보기 !</button>
+                <button type="button" class="button" data-target="와시리" onclick="openModal('와시리')">자세히 보기 !</button>
             </article>
         </div>
     
@@ -586,7 +619,7 @@
     
                 <br>
     
-                <button type="button" class="button" onclick="location.href='detailed_pages/이가갈비.html'">자세히 보기 !</button>
+                <button type="button" class="button" data-target="이가갈비" onclick="openModal('이가갈비')">자세히 보기 !</button>
             </article>
         </div>
     
@@ -615,7 +648,7 @@
         
                 <br>
         
-                <button type="button" class="button" onclick="location.href='detailed_pages/이돈집.html'">자세히 보기 !</button>
+                <button type="button" class="button" data-target="이돈집" onclick="openModal('이돈집')">자세히 보기 !</button>
             </article>
         </div>
     
@@ -645,7 +678,7 @@
     
                 <br>
     
-                <button type="button" class="button" onclick="location.href='detailed_pages/장모족발.html'">자세히 보기 !</button>
+                <button type="button" class="button" data-target="장모족발" onclick="openModal('장모족발')">자세히 보기 !</button>
             </article>
         </div>
     
@@ -674,7 +707,7 @@
     
                 <br>
     
-                <button type="button" class="button" onclick="location.href='detailed_pages/종로계림닭도리탕원조.html'">자세히 보기 !</button>
+                <button type="button" class="button" data-target="종로계림닭도리탕원조" onclick="openModal('종로계림닭도리탕원조')">자세히 보기 !</button>
             </article>
         </div>
     
@@ -704,7 +737,7 @@
     
                 <br>
     
-                <button type="button" class="button" onclick="location.href='detailed_pages/제일곱창.html'">자세히 보기 !</button>
+                <button type="button" class="button" data-target="제일곱창" onclick="openModal('제일곱창')">자세히 보기 !</button>
             </article>
         </div>
     
@@ -733,7 +766,7 @@
     
                 <br>
     
-                <button type="button" class="button" onclick="location.href='detailed_pages/쭈꾸미도사.html'">자세히 보기 !</button>
+                <button type="button" class="button" data-target="쭈꾸미도사" onclick="openModal('쭈꾸미도사')">자세히 보기 !</button>
             </article>
         </div>
     
@@ -762,7 +795,7 @@
         
                 <br>
         
-                <button type="button" class="button" onclick="location.href='detailed_pages/팔각도.html'">자세히 보기 !</button>
+                <button type="button" class="button" data-target="팔각도" onclick="openModal('팔각도')">자세히 보기 !</button>
             </article>
         </div>
     
@@ -791,7 +824,7 @@
     
                 <br>
     
-                <button type="button" class="button" onclick="location.href='detailed_pages/포차윤.html'">자세히 보기 !</button>
+                <button type="button" class="button" data-target="포차윤" onclick="openModal('포차윤')">자세히 보기 !</button>
             </article>
         </div>
     
@@ -820,7 +853,7 @@
     
                 <br>
     
-                <button type="button" class="button" onclick="location.href='detailed_pages/한양대육회집.html'">자세히 보기 !</button>
+                <button type="button" class="button" data-target="한양대육회집" onclick="openModal('한양대육회집')">자세히 보기 !</button>
             </article>
         </div>
     
@@ -850,7 +883,7 @@
     
                 <br>
     
-                <button type="button" class="button" onclick="location.href='detailed_pages/한양포차.html'">자세히 보기 !</button>
+                <button type="button" class="button" data-target="한양포차" onclick="openModal('한양포차')">자세히 보기 !</button>
             </article>
         </div>
     </div>
@@ -898,7 +931,7 @@
                     
                                             <br>
                     
-                                            <button type="button" class="button" onclick="location.href='detailed_pages/용용선생.html'">자세히 보기 !</button>
+                                            <button type="button" class="button" onclick="openModal('용용선생')">자세히 보기 !</button>
                                         </article>
                                     </div>
     
@@ -928,7 +961,7 @@
                     
                                             <br>
                     
-                                            <button type="button" class="button" onclick="location.href='detailed_pages/육회공작소.html'">자세히 보기 !</button>
+                                            <button type="button" class="button" onclick="openModal('육회공작소')">자세히 보기 !</button>
                                         </article>
                                     </div>
     
@@ -958,7 +991,7 @@
                     
                                             <br>
                     
-                                            <button type="button" class="button" onclick="location.href='detailed_pages/제일곱창.html'">자세히 보기 !</button>
+                                            <button type="button" class="button" onclick="openModal('제일곱창')">자세히 보기 !</button>
                                         </article>
                                     </div>
     
@@ -995,7 +1028,7 @@
                     
                                             <br>
                     
-                                            <button type="button" class="button" onclick="location.href='detailed_pages/땅코참숯구이.html'">자세히 보기 !</button>
+                                            <button type="button" class="button" onclick="openModal('땅코참숯구이')">자세히 보기 !</button>
                                         </article>
                                     </div>
     
@@ -1025,7 +1058,7 @@
                     
                                             <br>
                     
-                                            <button type="button" class="button" onclick="location.href='detailed_pages/장모족발.html'">자세히 보기 !</button>
+                                            <button type="button" class="button" onclick="openModal('장모족발')">자세히 보기 !</button>
                                         </article>
                                     </div>
     
@@ -1055,7 +1088,7 @@
                     
                                             <br>
                     
-                                            <button type="button" class="button" onclick="location.href='detailed_pages/와시리.html'">자세히 보기 !</button>
+                                            <button type="button" class="button" onclick="openModal('와시리')">자세히 보기 !</button>
                                         </article>
                                     </div>
     
@@ -1099,7 +1132,7 @@
                     
                                             <br>
                     
-                                            <button type="button" class="button" onclick="location.href='detailed_pages/이가갈비.html'">자세히 보기 !</button>
+                                            <button type="button" class="button" onclick="openModal('이가갈비')">자세히 보기 !</button>
                                         </article>
                                     </div>
     
@@ -1129,7 +1162,7 @@
                     
                                             <br>
                     
-                                            <button type="button" class="button" onclick="location.href='detailed_pages/종로계림닭도리탕원조.html'">자세히 보기 !</button>
+                                            <button type="button" class="button" onclick="openModal('종로계림닭도리탕원조')">자세히 보기 !</button>
                                         </article>
                                     </div>
     
@@ -1159,7 +1192,7 @@
                     
                                             <br>
                     
-                                            <button type="button" class="button" onclick="location.href='detailed_pages/포차윤.html'">자세히 보기 !</button>
+                                            <button type="button" class="button" onclick="openModal('포차윤')">자세히 보기 !</button>
                                         </article>
                                     </div>
     
@@ -1196,7 +1229,7 @@
                     
                                             <br>
                     
-                                            <button type="button" class="button" onclick="location.href='detailed_pages/한양대육회집.html'">자세히 보기 !</button>
+                                            <button type="button" class="button" onclick="openModal('한양대육회집')">자세히 보기 !</button>
                                         </article>
                                     </div>
     
@@ -1226,7 +1259,7 @@
                     
                                             <br>
                     
-                                            <button type="button" class="button" onclick="location.href='detailed_pages/한양포차.html'">자세히 보기 !</button>
+                                            <button type="button" class="button" onclick="openModal('한양포차')">자세히 보기 !</button>
                                         </article>
                                     </div>
     
@@ -1256,7 +1289,7 @@
                     
                                             <br>
                     
-                                            <button type="button" class="button" onclick="location.href='detailed_pages/쭈꾸미도사.html'">자세히 보기 !</button>
+                                            <button type="button" class="button" onclick="openModal('쭈꾸미도사')">자세히 보기 !</button>
                                         </article>
                                     </div>
     
@@ -1283,6 +1316,12 @@
         
     
     </section>
+
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <!-- 상세 페이지 내용 -->
+        </div>
+    </div>
 
 
 

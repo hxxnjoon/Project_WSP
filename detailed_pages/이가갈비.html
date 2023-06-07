@@ -7,9 +7,9 @@
 <body>
     <div id = "entire">
         <header>
-            <img id = "img_d" src = "이가갈비.jpg" width= "350px" height = "350px">
-            <img id = "img_d" src = "이가갈비1.jpg" width = "350px" height = "350px">
-            <img id = "img_d" src = "이가갈비2.jpg" width = "350px" height = "350px"><br><br>
+            <img id = "img_d" src = "detailed_pages/이가갈비.jpg" width= "300px" height = "300px">
+            <img id = "img_d" src = "detailed_pages/이가갈비1.jpg" width = "300px" height = "300px">
+            <img id = "img_d" src = "detailed_pages/이가갈비2.jpg" width = "300px" height = "300px"><br><br>
         </header>
         
         <br>
@@ -19,7 +19,7 @@
             <p id = "title_d">이 가 갈 비</p><br>
         </div>
 
-        <div class = "box">
+        <div class = "box1">
         <div class = "info">
 
         <div id = "call">
@@ -44,43 +44,22 @@
         </div>
 
         <br><br>
-        <div id = "menu">
-            <img id = "info1" src = "메뉴_d.jpeg" width = "20px" height = "20px">
-            <span type = "button" id="openModalmenu">메뉴판 사진으로 보기 !</span>
-
-            <div id="myModal" class="modal">
-                <span class="close">&times;</span>
-                <img class="modal-content" id="modalImage">
-            </div>
-
-        </div>
 
         <div id = "spe">
-            <br><br><br>
+            <br>
             <img id = "info1" src = "하트_d.jpeg" width = "15px" height = "15px">
             <span id = "info2">특징</span>
-            <span id = "info3">4인 이상 / 시끄러움 / 1~2만원대 / 한식 </span>
+            <span id = "info3">4인 이상 / 시끄러움 /<br> 3만원대 이상 / 한식 </span>
         </div>
         </div>
 
         <br>
-        <span id = "blank">&nbsp;&nbsp;&nbsp;</span><button type="button" id="backto" onclick="location.href='../mainpage_top.html'">메인페이지로!</button>
+
+        <div id ="menu">
+            <img src = "detailed_pages/메뉴_이가갈비.jpg" width = "430px" height = "450px">
+        </div>
     </div>
 </div>
 </div>
-<script>
-    // 모달 열기
-    document.getElementById("openModalmenu").addEventListener("click", function() {
-    document.getElementById("myModal").style.display = "block";
-    document.getElementById("modalImage").src = "메뉴_이가갈비.jpg"; 
-    });
-    document.addEventListener("click", function(event) {
-        var modal = document.getElementById("myModal");
-        var closeBtn = document.getElementsByClassName("close")[0];
-        if (event.target == modal || event.target == closeBtn) {
-            modal.style.display = "none";
-        }
-    });
-</script>
 </body>
 </html>

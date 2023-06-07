@@ -19,6 +19,12 @@ const modal = document.getElementById("modal")
         modalOff()
     })
 
+    document.addEventListener("keydown", function(event) {
+        if (event.key === "Escape") {
+            modalOff();
+        }
+    });
+
     modal.addEventListener("click", e => {
         const evTarget = e.target
         if(evTarget.classList.contains("modal-overlay")) {
@@ -32,8 +38,43 @@ const modal = document.getElementById("modal")
         this.classList.toggle("active");
     });
   }
+  
 
   function toggleCheckbox(checkboxId) {
     var checkbox = document.getElementById(checkboxId);
     checkbox.checked = !checkbox.checked;
   }
+
+
+  function openModal(store){
+
+    var xhttp = new XMLHttpRequest();
+    xhttp.onreadystatechange = function() {
+        if (this.readyState == 4 && this.status == 200) {
+            document.querySelector("#myModal .modal-content").innerHTML = this.responseText;
+            document.getElementById("myModal").style.display = "block";
+            document.body.style.overflow = "hidden";
+        }
+    };
+    xhttp.open("GET", "detailed_pages/" + store + ".html", true);
+    xhttp.send();
+}
+
+document.addEventListener("click", function(event) {
+    var modal = document.getElementById("myModal");
+    if (event.target === modal) {
+        closeModal();
+    }
+});
+
+document.addEventListener("keydown", function(event) {
+    if (event.key === "Escape") {
+        closeModal();
+    }
+});
+
+function closeModal() {
+    var modal = document.getElementById("myModal");
+    modal.style.display = "none";
+    document.body.style.overflow = "auto";
+}
