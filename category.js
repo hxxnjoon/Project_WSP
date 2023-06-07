@@ -39,7 +39,7 @@ function resetSearch() {
      {name:"종로계림닭도리탕원조", person: "3", mood: "quiet", price:"20000",food:"korea"},
      
      {name:"포차윤", person: "4", mood: "quiet", price:"20000",food:"etc"},
-     {name:"한양대육회집", person: "4", mood: "quiet", price:"30000",food:"korea"},
+     {name:"한양대육회집", person: "3", mood: "quiet", price:"30000",food:"korea"},
      {name:"한양포차", person: "4", mood: "quiet", price:"20000",food:"korea"},
      {name:"메종드혁이네", person: "4", mood: "quiet", price:"30000",food:"korea"},
      {name:"부엉이산장", person: "3", mood: "quiet", price:"30000",food:"korea"}
